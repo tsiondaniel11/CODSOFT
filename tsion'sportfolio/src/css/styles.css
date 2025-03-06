@@ -1,0 +1,652 @@
+/* for common pages */
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    max-width: 100%;
+    font-size: 2.5vh;
+  }
+  a{
+    
+    font-weight: bold;
+  }
+  main {
+    margin-top: 20vh;
+  }
+  
+  *,::after,::before {
+    box-sizing: border-box;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  /*===== header===== */
+  
+  .header {
+    background: rgb(243, 235, 242);
+    box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
+    z-index: 10;
+    padding: 3vh 0;
+    flex: 1 1 auto;
+  }
+  
+  .header--fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  
+  .header__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+  }
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .header__navbar-ulist {
+    display: flex;
+    padding: 0 10px;
+    list-style-type: none;
+    margin-left: 30vw;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  .header__navbar-list {
+    position: relative;
+    padding: 10px 0 10px 28px;
+    transition: 0.7s ease;
+  }
+  .header__navbar-link{
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+    color: #080808;;
+  }
+  .header__navbar-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #e24bb0;
+    visibility: hidden;
+    width: 0px;
+  }
+  
+  .header__navbar-link--active:before {
+    visibility: visible;
+    width: 25px;
+  }
+  
+  .header__navbar-link:visited {
+    color: #080808;
+  }
+  
+  .header__navbar-link:focus {
+    color: #080808;
+  }
+  .header__navbar-link:hover ,.header__media-icons-link:hover{
+    color: #f106a3;
+    font-weight: bold;
+    
+  }
+  .header__navbar-link:active,.header__media-icons-link:active {
+    color: #e74fb4;
+  }
+  .header__media-icons {
+    padding-right: 10px;
+  }
+  
+  .header__media-icons-link {
+    padding-left: 6px;
+    flex: 0 1 auto;
+    color: #6f6f6f;
+  }
+  .navbar-burger,.group{
+    display: none;
+  }
+  @media (max-width: 769px) {
+    .header__navbar-ulist {
+        display: none;
+    }
+    .navbar-burger{
+        display: inline-block;
+    }
+    .hiwot:before {
+        content: "";
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+  }
+  @media (min-width: 770px) and (max-width: 1024px) {
+    .header__navbar-ulist{
+        margin-left: 0vw;
+    }
+    .navbar-burger{
+        display: none;
+    }
+  }
+  
+  
+  
+    
+  
+  /*=====Footer=====*/
+  
+  .footer {
+    background: rgb(243, 235, 242);
+    box-shadow: 25px 0px 0 0 rgba(0, 0, 0, 0.08);
+    padding: 30px 0;
+    color: #222222;
+    text-align: center;
+    z-index: 2;
+    flex: 1 1 auto;
+    position: static;
+  }
+  
+  
+  /***************************************home page*******************************/
+  
+  /*===== main===== */
+  .tsion {
+    height: 100vh;
+    background-size: cover;
+  }
+  
+  .tsion__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 45vh;
+    position: relative;
+  }
+  
+  .tsion__title {
+    font-size: 8vh;
+    font-weight: 700;
+    line-height: 8vh;
+    color: #222222;
+    text-align: center;
+    font-family: serif;
+  }
+  
+  .tsion__subtitle {
+    color: rgba(71, 33, 71, 0.835);
+    margin: 10px 0 0 0;
+    font-size: 5vh;
+    text-align: center;
+    font-family: serif;
+    text-shadow: 5px 5px 4px #fff;
+  }
+  
+  .tsion__about-button {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2vh;
+    letter-spacing: 0.2vh;
+    padding: 1.5vh 3vh;
+    border-radius: 50px;
+    margin-top: 1.5vh;
+    justify-content: center;
+    color: #fff;
+    background: #e24bb0;
+  }
+  
+  .tsion__about-button:hover {
+    background-color: #f5069d;
+    color: #fff;
+  }
+  
+  .tsion__about-button:active {
+    background: #e24bb0;
+  }
+  
+  .tsion__about-button:focus {
+    outline: 2px solid rgb(255, 0, 200);
+  }
+  @media (max-width: 769px){
+  .navbar ul{
+    display: none;
+  }
+  #Hiwot:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  }
+  /***************************About********************************/
+  
+  .main-about {
+    max-width: 100%;
+    padding: 0 5vh;
+  }
+  
+  .main__section-title {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 4vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .main__h3 {
+    font-weight: 700;
+    font-size: 3vh;
+    color: #555555;
+    margin-bottom: 10px;
+  }
+  
+  .main__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .main__description {
+    margin-bottom: 15px;
+  }
+  
+  .main__blockquote {
+    font-family: cursive;
+    margin-bottom: 20px;
+  }
+  
+  .main__hobbies {
+    margin: 10vh 0;
+  }
+  
+  video {
+    width: 50vh;
+    height: 20vh;
+    max-width: 100%;
+  }
+  
+  @media (min-width: 770px) {
+    .main__my-photo {
+        width: 33.3%;
+        padding-right: 2vh;
+    }
+  
+    .main__article-section {
+        width: 66.6%;
+    }
+    .main__container {
+        flex-wrap: nowrap;
+    }
+    .main__data{
+        display: flex;
+       flex-shrink: 0;
+       width: 100%;
+       max-width: 100%;
+    }
+  }
+  @media (min-width:770px) and (max-width:1462px){
+    .main__data{
+        font-size: 1.75vh;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .main__section1 {
+        width: 50%;
+        flex: 0 0 auto;
+        margin-right: 2rem;
+    }
+  
+    .main__address {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+  }
+  
+  
+  /***************************resume*********************************/
+  
+  .main-resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+  .main-resume__section-title{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 4vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .main-resume__education,.main-resume__experience {
+    flex: 0 0 auto;
+    margin: 10px 0;
+  }
+  
+  .main-resume__resume {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15vw;
+    margin: 25px 0;
+  }
+  
+  .main-resume__h3{
+    font-size: 3vh;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #222222;
+  }
+  
+  .main-resume__h5{
+    font-size: 1.6vh;
+    background: #fbeff6;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: rgb(160, 55, 137);
+  }
+  .main-resume__skills-h3{
+    font-weight: 700;
+    font-size: 3vh;
+    color: #555555;
+    margin-bottom: 10px;
+  }
+  .main-resume__h4 {
+    line-height: 2vh;
+    font-size: 2vh;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: rgb(160, 55, 137);
+  }
+  
+  .main-resume__education-item,.main-resume__experience-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    position: relative;
+  }
+  
+  .main-resume__border {
+    width: 100%;
+    height: 18px;
+    border: 1px solid #ddd;
+  }
+  
+  .main-resume__skill {
+    background-color: rgb(160, 55, 137);
+    width: 10vw;
+    overflow: hidden;
+    height: 15px;
+  }
+  
+  .main-resume__skill--html {
+    width: 100%;
+  }
+  
+  .main-resume__skill--css {
+    width: 90%;
+  }
+  
+  .main-resume__skill--javascript {
+    width: 70%;
+  }
+  
+  @media (min-width: 769px) {
+    .main-resume__resume {
+        display: flex;
+        flex-direction: row;
+    }
+  
+    .main-resume__skills {
+        width: 30vw;
+        margin-left: 20vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-resume__resume {
+        
+        flex-shrink: 1;
+        overflow-y: scroll;
+    }
+  }
+  /**************************Portfolio**************************/
+  
+  .main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10vw;
+  }
+  .main__section-title{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 4vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .main__quote {
+  font-family: cursive;
+  text-align: center;
+  }
+  
+  .main__welcome {
+  text-align: center;
+  }
+  
+  .main__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+  color: #e24bb0;
+  }
+  
+  .main__list-item{
+  margin: 10px;
+  }
+  .main__images-figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 50%;
+  }
+  .main__figure-link {
+    margin: 10px;
+  }
+  .main__figure-caption {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 2px;
+  color: #e24bb0;
+  font-size: 2.3vh;
+  }
+  
+  @media (min-width: 769px) {
+  .main__images-section-1,
+  .main__images-section-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  
+  .main__images-figure2 img,
+  .main__images-figure4 img,
+  .main__images-figure3 img {
+    width: 400px;
+    height: 460px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .main__images-figure1 img,
+  .main__images-figure5 img,
+  .main__images-figure6 img {
+    width: 430px;
+    height: 320px;
+    z-index: 1;
+  }
+  }
+  /****************************contact page ******************************************/
+  .contacts {
+    margin: 20vh auto;
+    height: auto;
+  }
+  .contacts__section-title{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 4vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .contacts__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .content__information {
+    max-width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 5vh;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .information__h4-fa {
+    color: rgb(216, 66, 183);
+    width: 44px;
+    height: 50px;
+  }
+  
+  .information__p{
+    padding: 0 0 5vh 5vh;
+    overflow: hidden;
+  }
+  
+  .information__iframe {
+    width: 100%;
+    height: 20vh;
+  }
+  .information__input {
+    width: 100%;
+    padding: 2.5vh 2vh;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .information__button {
+    width: 50%;
+    margin: 0 30%;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    font-weight: 600;
+    font-size: 1.8vh;
+    letter-spacing: 0.2vh;
+    padding: 1vw 2vw;
+    border-radius: 10px;
+    color: #fff;
+    background: #e24bb0;
+    border: none;
+  }
+  .information__button:hover{
+    background-color: #f106a3;
+  }
+  .form__div{
+    margin: 2vh 0;
+  }
+  ::placeholder{
+    color: #c5c0c0;
+    font-size: medium;
+  }
+  
+  @media (min-width: 450px) {
+    .contacts {
+        max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 200px) {
+    .contacts {
+        max-width: 100%;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .content__information{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    
+    .row__name,.row__email{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow: hidden;
+    }
+  }
+  
+  @media (max-width: 769px) {
+    .content__information ,.row__name,.row__email{
+        width: 100%;
+        margin: 2vh 0;
+    }
+    @media (max-width: 344px) {
+        .contacts{
+            width: 100%;
+        }
+    }
+  }
+  
